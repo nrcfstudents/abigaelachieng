@@ -2,3 +2,34 @@ body{
 	background-color: green;
 	font-family: monospace;
 }
+
+.navbar{
+	background-color: #333;
+	padding: 25PX 50PX 25PX 50PX;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.logo{
+	font size: 1.a5;
+	color: #fff;
+	font-weight: bold;
+}
+
+.nav-links{
+	list-style: none;
+	display: inline-flex;
+	gap: 20px: ;
+}
+.nav-links li{
+	position: !important;
+}
+.nav-links a{ 
+text-decoration: none; 
+color: #fff;
+font-size: 1.2em;
+padding: 5px 10px;
+}
