@@ -189,4 +189,165 @@ h1{
     transform: translateY(-10px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
-	 
+
+/* Footer Styles */
+.footer {
+    background: #2c3e50; /* Dark Blue-Grey */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+    color: #f39c12; /* Amber color */
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f39c12; /* Amber color */
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    transition: opacity 0.3s;
+}
+
+.footer-social img:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #34495e; /* Dark Blue-Grey */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Skills & Education Section Styling */
+.skills-education-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Subtle gradient background */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 30px 0;
+}
+
+.skills, .education {
+    width: 48%; /* Each section takes up 48% of the width */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow for individual sections */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.skills:hover, .education:hover {
+    transform: translateY(-10px); /* Lift on hover */
+}
+
+.skills h2, .education h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333; /* Dark text color */
+    border-bottom: 2px solid #4CAF50; /* Green underline for Skills */
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.education h2 {
+    border-bottom-color: #ff9800; /* Orange underline for Education */
+}
+
+.skills ul, .education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li, .education ul li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #555; /* Medium text color */
+    padding-left: 30px; /* Space for custom icons */
+    position: relative;
+}
+
+.skills ul li::before {
+    content: "🚀 "; /* Rocket icon for skills */
+    color: #4CAF50; /* Green color */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+}
+
+.education ul li::before {
+    content: "📚 "; /* Book icon for education */
+    color: #ff9800; /* Orange color */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+}
